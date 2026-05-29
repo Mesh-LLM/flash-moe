@@ -1,0 +1,14 @@
+[package]
+name = "flash-moe"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Flash-MoE inference endpoint plugin for mesh-llm"
+repository = "https://github.com/Mesh-LLM/flash-moe"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive", "env"] }
+mesh-llm-plugin = { git = "https://github.com/Mesh-LLM/mesh-llm.git", branch = "codex/openai-endpoint-plugin" }
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }

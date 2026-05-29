@@ -1,0 +1,4 @@
+name = "flash-moe"
+version = "0.1.0"
+description = "Flash-MoE inference endpoint plugin for mesh-llm."
+command = "flash-moe"
