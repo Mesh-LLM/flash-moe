@@ -73,3 +73,9 @@ Each archive contains:
 
 - `flash-moe/flash-moe`
 - `flash-moe/plugin.toml`
+
+## Compatibility
+
+The plugin SDK is pinned to Mesh v0.77.0 (plugin protocol 3).
+This build requires a protocol-3 host; older protocol-2 hosts must keep their
+previous plugin release or upgrade Mesh together with the plugin.
