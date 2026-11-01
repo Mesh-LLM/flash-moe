@@ -69,6 +69,13 @@ cargo build --locked
 
 ## Release Archives
 
+Push a `v*` tag from a validated commit to publish a release. To recover an
+interrupted release, select the reviewed `main` branch in the `Release`
+workflow and enter the existing version tag. The selected branch supplies
+the workflow; builds check out `refs/tags/<version>`. Confirm that the tag
+still points to the validated commit and no release assets have been published
+before running it manually. macOS archives use the ARM64 `macos-15` runner.
+
 GitHub releases package archives using the same contract as
 `Mesh-LLM/blackboard`:
 
