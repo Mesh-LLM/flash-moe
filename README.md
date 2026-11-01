@@ -55,10 +55,16 @@ The plugin allocates a local port and appends:
 
 Do not pass `--serve` in backend args.
 
+## Compatibility
+
+Version 0.1.1 requires a MeshLLM host that supports plugin protocol 3.
+Protocol 2 hosts cannot load this version. The plugin SDK is pinned to MeshLLM
+commit `efd30516fd2cd92ac132dfd7b8341d24d412ee9c` for reproducible builds.
+
 ## Build
 
 ```bash
-cargo build
+cargo build --locked
 ```
 
 ## Release Archives
